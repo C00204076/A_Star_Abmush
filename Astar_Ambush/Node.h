@@ -17,7 +17,7 @@
 class Node
 {
 public:
-	Node(Vector2 position, int id);
+	Node(Vector2 position, Vector2 size, int id);
 
 
 	void draw(SDL_Renderer* renderer);
@@ -40,6 +40,8 @@ public:
 	void setGoal(bool goal);
 	void setVisited(bool visited);
 	//
+
+	std::vector<std::shared_ptr<Node>> m_adjacentSet;
 
 private:
 	Vector2 m_position;

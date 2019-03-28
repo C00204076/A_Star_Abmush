@@ -15,7 +15,7 @@ Game::Game() :
 	m_surface(NULL),
 	m_isRunning(false)
 {
-	
+	m_inputManager = new InputManager();
 }
 
 //
@@ -129,7 +129,7 @@ void Game::run()
 //
 void Game::update(double deltaTime)
 {
-
+	m_inputManager->update(deltaTime);
 }
 
 //

@@ -8,14 +8,20 @@
 
 #include "Node.h"
 
-Node::Node(Vector2 position, int id) :
+Node::Node(Vector2 position, Vector2 size, int id) :
 	m_position(position),
 	m_id(id)
 {
-
+	m_square->setPosition(m_position);
+	m_square->setSize(size);
+	m_square->setRGBA(150, 150, 150, 255);
 }
 
-
+//
+void Node::draw(SDL_Renderer* renderer)
+{
+	m_square->draw(renderer);
+}
 
 
 // Get methods

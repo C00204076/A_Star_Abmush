@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Node.cpp" />
   </ItemGroup>
@@ -139,6 +140,7 @@
     <ClInclude Include="Circle.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Grid.h" />
+    <ClInclude Include="InputManager.h" />
     <ClInclude Include="Line.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Pathfinding.h" />

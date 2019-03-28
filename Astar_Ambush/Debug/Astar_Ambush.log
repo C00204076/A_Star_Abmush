@@ -1,5 +1,7 @@
 ﻿  Game.cpp
 c:\users\gameuser\desktop\a star\a star\astar_ambush\astar_ambush\game.cpp(99): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\gameuser\desktop\a star\a star\astar_ambush\astar_ambush\game.cpp(132): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  InputManager.cpp
   main.cpp
   Generating Code...
   Astar_Ambush.vcxproj -> C:\Users\gameuser\Desktop\A star\A star\Astar_Ambush\Debug\Astar_Ambush.exe

@@ -9,6 +9,8 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include "InputManager.h"
+
 #include <SDL.h>
 #include <SDL_image.h>
 #include <vector>
@@ -34,6 +36,9 @@ public:
 	void close();
 
 private:
+	//
+	InputManager* m_inputManager;
+
 	//
 	SDL_Window* m_window;
 	//

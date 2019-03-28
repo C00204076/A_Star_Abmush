@@ -65,7 +65,7 @@ public:
 		if (m_active == true)
 		{
 			m_position = position;
-			setBoundaryLines;
+			setBoundaryLines();
 		}
 	}
 
