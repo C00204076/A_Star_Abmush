@@ -45,6 +45,10 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 			SDL_SetRenderDrawColor(m_renderer, 255, 255, 255, 255);
 		}
 
+		m_grid.reset(new Grid(50, 50));
+
+		m_grid->checkAdjacentSquares();
+
 
 		m_isRunning = true;
 	}
@@ -137,7 +141,7 @@ void Game::draw()
 {
 	SDL_RenderClear(m_renderer);
 
-
+	m_grid->draw(m_renderer);
 
 	SDL_RenderPresent(m_renderer);
 }

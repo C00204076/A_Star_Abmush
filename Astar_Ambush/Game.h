@@ -9,6 +9,15 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include "Primitive.h"
+#include "Vector2.h"
+#include "Circle.h"
+#include "Line.h"
+#include "Point.h"
+#include "Square.h"
+#include "Node.h"
+#include "Grid.h"
+#include "PathFinding.h"
 #include "InputManager.h"
 
 #include <SDL.h>
@@ -16,6 +25,7 @@
 #include <vector>
 #include <iostream>
 #include <chrono>
+
 
 //
 class Game
@@ -38,6 +48,8 @@ public:
 private:
 	//
 	InputManager* m_inputManager;
+	std::shared_ptr<Grid> m_grid;
+
 
 	//
 	SDL_Window* m_window;

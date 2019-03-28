@@ -18,9 +18,9 @@
 class Square : public Primitive
 {
 public:
-	Square(bool active)
+	Square()
 	{
-		m_active = active;
+		m_active = true;
 	}
 
 	~Square() = default;
@@ -90,7 +90,7 @@ public:
 private:
 	Vector2 m_size = Vector2(25, 25);
 	std::vector<std::unique_ptr<Line>> m_lines;
-	bool m_active;
+	bool m_active = true;
 
 	//
 	void setBoundaryLines()
